@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Membuat Form</title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data">
+        
+        <!-- method ada dua get untuk mencari, sedangkan post untuk mengupoad -->
+
+        <!-- Kalau mau mengupload file harus ada enctype kalau tidak ada upload file tidak 
+        menggunakan enctype-->
+        <label>Nama Mahasiswa</label><br>
+        <input type="text" placeholder="Masukkan Nama">
+        <br>
+        
+        <label>Tanggal Lahir</label><br>
+        <input type="date" placeholder="Masukkan Tanggal Lahir" name="tgl_l">
+        <br>
+        
+        <label>Alamat</label><br>
+        <textarea type="name" placeholder="Masukkan Alamat" cols="15" rows="4" style="resize: none"></textarea>
+        <br>
+
+        <label>Warna Favorit</label><br>
+        <input type="color" name="Warna_favorit">
+        <br>
+
+        <label>Umur</label><br>
+        <input type="number" placeholder="Umur Anda" name="Umur" required disabled>
+        <br>
+
+        <label>Jenis Kelamin</label><br>
+        <input type="radio" name="jk">Laki-laki
+        <input type="radio" name="jk">Perempuan
+        <br><br>
+
+        <label>Range</label><br>
+        <input type="range" name="progress">
+        <br>
+
+        <label>Jenis Kendaraan</label><br>
+        <select name="Jenis Kendaraan" id="">
+            <option value="" selected>-- Pilih Kendaraan --</option>
+            <option value="Sepeda">Sepeda</option>
+            <option value="Motor">Motor</option>
+            <option value="Mobil">Mobil</option>
+            <option value="Pesawat">Pesawat</option>
+            <option value="Jetpack">Jetpack</option>
+        </select>
+        <br>
+
+        <label>Upload Kelengkapan</label><br>
+        <input type="file" name="dokumen">
+        <br>
+
+        <label>Password</label><br>
+        <input type="password" name="password" placeholder="Masukkan Password">
+        <br>
+        <br>
+
+        <button type="reset">Batal</button>
+        <button type="submit">Simpan</button>
+    </form>
+
+</body>
+</html> 
